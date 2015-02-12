@@ -1,14 +1,3 @@
-Update:
-======================
-ubuntu14.04, you might use this to produce:
-
-gst-launch-1.0 -v v4l2src ! "video/x-raw,format=YUY2,width=640,height=480,framerate=30/1" ! queue ! v4l2sink device=/dev/video1 sync=0
-
-
-Consumer:
-
-mplayer tv:// -tv device=/dev/video1
-
 
 
 v4l2loopback - a kernel module to create V4L2 loopback devices
